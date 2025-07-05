@@ -36,7 +36,7 @@ const rawCommands: Command[] = [
 		execute(app) {
 			const { userDataLoaded, userData } = app.state
 			if (!userDataLoaded)
-				return <>promptfolio: user data could not be fetched</>
+				return <>Termifolio: user data could not be fetched</>
 			const { avatar_url, login, name, bio } = userData
 			return (
 				<div className={styles.infoWrapper}>
@@ -57,12 +57,14 @@ const rawCommands: Command[] = [
 					</div>
 
 					<div className={styles.icons}>
-						<i className="fab fa-fw fa-react"></i>
-						<i className="fab fa-fw fa-sass"></i>
-						<i className="fab fa-fw fa-js-square"></i>
-						<i className="fab fa-fw fa-node-js"></i>
+						<i className="fab fa-fw fa-docker"></i>
+						<i className="fab fa-fw fa-git"></i>
+						<i className="fab fa-fw fa-jenkins"></i>
 						<i className="fab fa-fw fa-python"></i>
-						<i className="fab fa-fw fa-java"></i>
+						<i className="fab fa-fw fa-aws"></i>
+						<i className="fab fa-fw fa-js-square"></i>
+						
+					
 					</div>
 				</div>
 			)
@@ -75,7 +77,7 @@ const rawCommands: Command[] = [
 		execute(app) {
 			const { projectDataLoaded, projectData } = app.state
 			if (!projectDataLoaded)
-				return <>promptfolio: project data could not be fetched</>
+				return <>Termifolio: project data could not be fetched</>
 			return (
 				<>
 					{projectData.map(
